@@ -1,31 +1,35 @@
 {
   "name": "mytodo-react-node",
   "version": "1.0.0",
+  "private": true,
   "description": "Develop Todo web application using ReactJS, NodeJS, ExpressJS, MongoDB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "nodemon server/index.js", 
+    "start-dev": "nodemon server/index.js",
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
+	"predeploy": "cd client && npm install && npm run build", 
+    "deploy": "gh-pages -d .\" 
   },
   "engines": {
     "node": "14.18.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://oauth2:Vavg2QsE9pnryzk1MEQU@gitlab.com/quantic.com/osc/rcm/reactjs-nodejs-samples.git"
+    "url": "git@github.com:huytuanphan/mytodo-react-node.git"
   },
   "author": "Phan Tuan Huy",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/quantic.com/osc/rcm/reactjs-nodejs-samples/issues"
+    "url": "https://github.com/huytuanphan/mytodo-react-node/issues"
   },
-  "homepage": "https://gitlab.com/quantic.com/osc/rcm/reactjs-nodejs-samples#readme",
+  "homepage": "https://huytuanphan.github.io/mytodo-react-node/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.2.3",
     "mongoose": "^6.0.12"
   },
   "devDependencies": {
