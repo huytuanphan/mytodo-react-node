@@ -10,7 +10,7 @@
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build",
     "predeploy": "cd client && npm install && npm run build", 
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d client\build" 
   },
   "engines": {
     "node": "14.18.1"
