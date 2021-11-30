@@ -10,7 +10,7 @@
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build",
     "predeploy": "cd client && npm install && npm run build", 
-    "deploy": "gh-pages -d ." 
+    "deploy": "gh-pages -d build" 
   },
   "engines": {
     "node": "14.18.1"
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/huytuanphan/mytodo-react-node/issues"
   },
-  "homepage": "	/",
+  "homepage": "https://huytuanphan.github.io/mytodo-react-node/",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
